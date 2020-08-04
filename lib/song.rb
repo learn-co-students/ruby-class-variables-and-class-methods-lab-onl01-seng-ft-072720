@@ -47,7 +47,7 @@ class Song
     artist_count = {}
     @@artists.each do |key|
       if artist_count.include?(key)
-         artist_count[key] = 2
+         artist_count[key] = @@artists.count(key)
         else
           artist_count[key] = 1
         end
